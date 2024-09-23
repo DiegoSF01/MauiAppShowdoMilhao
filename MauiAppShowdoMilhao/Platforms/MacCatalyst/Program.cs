@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace MauiAppShowdoMilhao
+namespace MauiAppShowDoMilhao
 {
     public class Program
     {

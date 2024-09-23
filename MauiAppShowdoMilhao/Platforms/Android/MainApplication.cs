@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace MauiAppShowdoMilhao
+namespace MauiAppShowDoMilhao
 {
     [Application]
     public class MainApplication : MauiApplication

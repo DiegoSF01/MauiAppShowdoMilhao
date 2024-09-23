@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using Plugin.Maui.Audio;
 
-namespace MauiAppShowdoMilhao
+namespace MauiAppShowDoMilhao
 {
     public static class MauiProgram
     {
@@ -15,8 +16,11 @@ namespace MauiAppShowdoMilhao
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            // https://stackoverflow.com/questions/72463558/how-to-play-an-audio-file-net-maui
+            builder.Services.AddSingleton(AudioManager.Current);
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
