@@ -18,7 +18,7 @@ namespace MauiAppShowDoMilhao
 
             // https://stackoverflow.com/questions/72463558/how-to-play-an-audio-file-net-maui
             builder.Services.AddSingleton(AudioManager.Current);
-
+            
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
